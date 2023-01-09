@@ -124,7 +124,8 @@
     width: 100%;
     animation-name: fade-in;
     animation-duration: 7s;
-    margin-top: 114px;
+    // margin-top: 114px;
+    z-index: -1;
 
     .inner-content {
       display: flex;
@@ -196,8 +197,8 @@
   }
 
   .image {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
 
   @keyframes fade-in {
