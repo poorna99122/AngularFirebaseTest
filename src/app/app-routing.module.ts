@@ -16,6 +16,7 @@ const routes: Routes = [
       canActivate: [() => inject(LoginServiceService).login()]
   },
   { path: 'errorpage', loadChildren: () => import('./common/errorpage/errorpage.module').then(m => m.ErrorpageModule) },
+  { path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) },
 ];
 
 @NgModule({
